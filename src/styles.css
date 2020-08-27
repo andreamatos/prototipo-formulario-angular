@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #404c51;
+}
+
+label{
+  font-weight: bold;
+}
+
+.espaco05 {
+  margin: 0 .5em;
+}
+
+/*quando tamanho do navegador ter minumo 1200px aplicar regra do .container */
+@media(min-width: 1200px){
+  .container{
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.col-valor-header {
+  width: 120px;
+}
+
+.col-acoes {
+  width: 100px;
+  text-align: center;
+}
+
+.col-acoes-content {
+  text-align: center;
+}
+
+.col-valor-content {
+  text-align: right;
+}
+
+.col-data-header {
+  width: 350px;
+}
+
+.col-data-content {
+  text-align: center;
+}
+
+.espaco-icones {
+  margin: 0 .25em!important;
+}
