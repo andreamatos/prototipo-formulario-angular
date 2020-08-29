@@ -1,3 +1,4 @@
+import { SetorService } from './setor.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -25,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     TooltipModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SetorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

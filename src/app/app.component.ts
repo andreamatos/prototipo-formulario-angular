@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { SetorService } from './setor.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'prototipo-faq';
+export class AppComponent implements OnInit{
+
+  setores = [];
+
+  constructor(private setorService: SetorService){}
+
+  ngOnInit() {
+    this.setores = this.setorService.consultar();
+  }
+
 }
