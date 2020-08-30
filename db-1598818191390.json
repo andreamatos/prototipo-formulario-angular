@@ -1,0 +1,16 @@
+{
+  "empresas": [
+    {
+      "empresa": "3",
+      "descEmpresa": "CRUZEIRO - PÓS GRADUAÇÃO"
+    },
+    {
+      "empresa": "10",
+      "descEmpresa": "UNICID - PÓS GRADUAÇÃO"
+    },
+    {
+      "empresa": "15",
+      "descEmpresa": "UNIFRAN - PÓS GRADUAÇÃO"
+    }
+  ]
+}

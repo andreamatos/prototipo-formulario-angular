@@ -1,22 +1,21 @@
 <div class="container">
 
-  <form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
+  <form #usuarioForm="ngForm" (ngSubmit)="adicionar(usuarioForm)">
 
-    <div class="form-group">
+    <div class="ui-g">
       <label class="form-control-label">Empresa</label>
-      <select class="form-control" name="empresa" ngModel>
+      <select class="form-control" name="empresa" [(ngModel)]="usuario.empresa" required #empresa="ngModel">
         <option value="">Selecione</option>
-        <option *ngFor="let empresa of empresas"
-          [value]="empresa">{{ empresa }}</option>
+        <option *ngFor="let empresa of empresas" [value]="empresa.empresa + ' - ' + empresa.descEmpresa" >{{ empresa.empresa + ' - ' + ' ' + empresa.descEmpresa}} </option>
       </select>
     </div>
 
     <div class="form-group">
       <label class="form-control-label">Id Setor</label>
-      <input type="text" class="form-control" name="idSetor" ngModel>
+      <input pInputText type="text" class="form-control" name="idSetor" [(ngModel)]="usuario.id" >
 
       <label class="form-control-label">Setor</label>
-      <input type="text" class="form-control" name="idDescricao" ngModel>
+      <input pInputText type="text" class="form-control" name="idDescricao" [(ngModel)]="usuario.descSetor">
     </div>
 
     <button type="submit" class="btn btn-primary">Salvar</button>
