@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./lista-setor.component.css']
 })
 export class ListaSetorComponent {
-  constructor(private setorService: SetorService){}
-  setores = this.setorService.setores;
+  setores = [
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+    { descricao: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', pessoa: '9999-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' },
+  ];
 }

@@ -13,6 +13,7 @@ class Usuario{
   templateUrl: './cadastro-setor.component.html',
   styleUrls: ['./cadastro-setor.component.css']
 })
+export class CadastroSetorComponent{
 
 export class CadastroSetorComponent{
   usuario = new Usuario();

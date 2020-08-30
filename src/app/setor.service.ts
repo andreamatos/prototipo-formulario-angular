@@ -11,18 +11,17 @@ export class SetorService {
 
   setores = [];
 
-  consultar(): Promise<any> {
-    return this.http.get('http://localhost:3000/empresas').toPromise();
+  adicionar(usuario){
+      const setor ={
+        id: usuario.id,
+        descSetor: usuario.descSetor,
+        empresa: usuario.empresa
+      }
+      this.setores.push(setor);
   }
 
-  adicionar(usuario) {
-    const setor = {
-      id: usuario.id,
-      descSetor: usuario.descSetor,
-      empresa: usuario.empresa
-    };
-
-    this.setores.push(setor);
+  consultar(): Promise<any> {
+    return this.http.get('http://localhost:3000/empresas').toPromise();
   }
 
 }

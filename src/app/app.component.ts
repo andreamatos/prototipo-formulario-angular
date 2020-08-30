@@ -1,5 +1,4 @@
-import { SetorService } from './setor.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
