@@ -1,3 +1,4 @@
+import { SetorService } from './../setor.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,8 +9,4 @@ import { Component } from '@angular/core';
 export class ListaSetorComponent {
   constructor(private setorService: SetorService){}
   setores = this.setorService.setores;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 }

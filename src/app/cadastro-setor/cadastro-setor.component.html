@@ -6,11 +6,7 @@
       <label class="form-control-label">Empresa</label>
       <select class="form-control" name="empresa" ngModel>
         <option value="">Selecione</option>
-<<<<<<< HEAD
-        <option *ngFor="let empresa of empresas" [value]="empresa.empresa + ' - ' + empresa.descEmpresa" >{{ empresa.empresa + ' - ' + ' ' + empresa.descEmpresa}} </option>
-=======
         <option *ngFor="let empresa of empresas" [value]="empresa">{{ empresa }}</option>
->>>>>>> master
       </select>
     </div>
 
