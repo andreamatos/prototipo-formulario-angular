@@ -37,14 +37,10 @@ export class CadastroSetorComponent{
 export class CadastroSetorComponent implements OnInit {
   constructor(private setorService: SetorService){}
 
-  usuario = new Usuario();
-  empresas = [];
-
-  ngOnInit(){
-    this.setorService.consultar()
-      .then(empresas => {
-        this.empresas = empresas;
-      });
+  salvar(form: NgForm) {
+    console.log(form.value.empresa);
+    console.log(form.value.idSetor);
+    console.log(form.value.idDescricao);
   }
 
   adicionar(usuario: any){
