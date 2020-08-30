@@ -11,4 +11,8 @@ import { Component, Injectable } from '@angular/core';
 export class ListaSetorComponent {
   constructor(private setorService: SetorService){}
   setores = this.setorService.setores;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 }
